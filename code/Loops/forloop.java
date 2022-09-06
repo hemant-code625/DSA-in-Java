@@ -12,7 +12,7 @@ public class forloop {
           
          */
 
-         // shortcut for a= a+1 is a += 2 
+         // shortcut for a= a+1 is a += 1 
 
          for (int num=1; num <= 20; num += 1) {
             System.out.println(num);
