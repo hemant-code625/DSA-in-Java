@@ -15,7 +15,7 @@ public class SearchInString {
     static void search(String str, char target) {
        /* if (str.length() == 0) {
             return false;
-        }                                                          //No need to write this if function because at
+        }                                                          //No need to write this in function because at
           */                                                         // the end of the boolean search function it's returning false.
         for (int i = 0; i < str.length(); i++) {
             if (target == str.charAt(i)) {
