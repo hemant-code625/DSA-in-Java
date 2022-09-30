@@ -11,8 +11,10 @@ public class InfiniteArray {
         int end = 1;
 
         while (target > arr[end]){
-            int temp = end + 1;  // cross-check this line
-            end = end + (end - start + 1)*2;
+            int temp = end + 1; 
+            //doubling the box
+            // end = previous end + size of box*2
+            end = end + (end - start)*2;
             start = temp;
         }
         return binarySearch(arr,target,start,end);
@@ -21,6 +23,7 @@ public class InfiniteArray {
     static int binarySearch(int[]arr,int target,int start, int end) {
        // int start = arr[0];
        // int end = arr[arr.length -1 ];
+        
         int mid = start +(end - start)/2;
 
         while(start <= end){
