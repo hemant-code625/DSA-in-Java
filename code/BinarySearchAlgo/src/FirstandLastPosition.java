@@ -27,7 +27,7 @@ public class FirstandLastPosition {
                 // potential ans found
                 ans = mid;
                 if (firstIndex){
-                    end = mid+1;
+                    end = mid - 1;
                 }else{
                     start = mid+1;
                 }
