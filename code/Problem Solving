@@ -1,5 +1,5 @@
 
-# https://leetcode.com/problems/build-array-from-permutation/
+https://leetcode.com/problems/build-array-from-permutation/
 
 class Solution {
     public int[] buildArray(int[] nums) {
@@ -76,4 +76,40 @@ class Solution {
         return ans;  
     }
 }
+
+
+https://leetcode.com/problems/plus-one/submissions/
+
+
+
+class Solution {
+    public int[] plusOne(int[] digits) {
+        return plus(digits);    
+    }
+    static int[] plus(int []digits){
+        int n = digits.length;
+        int[] ans = new int[n];
+        int carry = 1;
+        
+        for(int i = n-1; i>=0; i--){
+            int sum = digits[i] + carry;
+            int total = sum%10;
+            ans[i] = total%10;
+            if(sum ==10){
+                carry = 1;   
+            }
+            if(sum < 10){
+                carry =0;
+            }  
+        }                     // for loop closed
+        if(carry == 1){
+                ans = new int[n+1];
+                ans[0]=1;
+            }
+        return ans;
+        
+    }  
+}
+
+
 
