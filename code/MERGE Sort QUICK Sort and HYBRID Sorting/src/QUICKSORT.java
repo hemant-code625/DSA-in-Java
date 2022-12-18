@@ -28,6 +28,8 @@ public class QUICKSORT {
                 int temp = arr[s];
                 arr[s] = arr[e];
                 arr[e] = temp;
+                s++;
+                e--;
             }
         }
         //now pivot is at correct position please sort two halves now
