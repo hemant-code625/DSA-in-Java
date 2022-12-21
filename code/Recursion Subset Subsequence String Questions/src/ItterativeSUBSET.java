@@ -4,6 +4,7 @@ import java.util.List;
 public class ItterativeSUBSET {
     public static void main(String[]args){
         int[] arr= {1,2,3};
+        System.out.println(subset(arr));
     }
     static List<List<Integer>>  subset(int[]arr){
         List<List<Integer>> outer = new ArrayList<>();
