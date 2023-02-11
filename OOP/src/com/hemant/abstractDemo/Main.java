@@ -1,4 +1,4 @@
-package com.hemant.properties.inheritance.abstractDemo;
+package com.hemant.abstractDemo;
 
 public class Main {
     public static void main(String[] args) {
