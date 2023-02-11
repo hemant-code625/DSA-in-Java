@@ -1,4 +1,4 @@
-package com.hemant.properties.inheritance.interfaces;
+package com.hemant.interfaces;
 
 public class Main {
     public static void main(String[] args) {
