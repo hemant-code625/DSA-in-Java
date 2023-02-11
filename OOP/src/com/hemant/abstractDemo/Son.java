@@ -1,4 +1,4 @@
-package com.hemant.properties.inheritance.abstractDemo;
+package com.hemant.abstractDemo;
 
 public class Son extends Parent {
     public Son(int age, int value){
