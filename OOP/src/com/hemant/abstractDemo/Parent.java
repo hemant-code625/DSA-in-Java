@@ -1,4 +1,4 @@
-package com.hemant.properties.inheritance.abstractDemo;
+package com.hemant.abstractDemo;
 
 public abstract class Parent {
     static int age;
