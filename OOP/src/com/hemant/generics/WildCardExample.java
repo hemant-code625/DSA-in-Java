@@ -47,7 +47,7 @@ public class WildCardExample<T extends Number>{
 
     @Override
     public String toString() {
-        return "CustomArrayList{" +
+        return "WildCardExample{" +
                 "data=" + Arrays.toString(data) +
                 ", size=" + size +
                 '}';
