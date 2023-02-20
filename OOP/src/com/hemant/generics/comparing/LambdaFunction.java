@@ -16,9 +16,9 @@ public class LambdaFunction {
         //arr.forEach((item) -> System.out.println(item*2));
         Consumer<Integer> fun = (item) -> System.out.println(item*3);
         arr.forEach(fun);
-        Operation sum = (a,b) -> a + b;
-        Operation product = (a,b) -> a * b;
-        Operation sub = (a,b) -> a-b;
+//         Operation sum = (a,b) -> a + b;
+//         Operation product = (a,b) -> a * b;
+//         Operation sub = (a,b) -> a-b;
 
 
     }
