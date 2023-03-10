@@ -105,7 +105,7 @@ public class CustomizedLinkedList {
     }
     public Node get(int index){
         Node temp = head;
-        for (int i = 1; i < index; i++) {
+        for (int i = 0; i < index; i++) {
             temp = temp.next;
         }
         return temp;
