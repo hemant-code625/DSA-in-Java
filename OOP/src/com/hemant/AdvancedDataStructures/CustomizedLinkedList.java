@@ -130,7 +130,7 @@ public class CustomizedLinkedList {
 
     public void display(){
         Node temp = head;
-        for (int i = 1; i < size; i++) {
+        for (int i = 1; i <= size; i++) {
             System.out.print(temp.value + " -> ");
             temp = temp.next;
         }
