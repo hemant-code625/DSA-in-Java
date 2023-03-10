@@ -76,7 +76,9 @@ public class CustomizedLinkedList {
         int value = node.value;     //The nodal value that is to be returned
 
         temp.next = node.next;      // pointing such a way that the index node get ignored and removed by garbage collector
-
+        /*
+        we can also do this (Its the same thing):- temp.next = temp.next.next;  
+        */
         size--;
         return value;
     }
