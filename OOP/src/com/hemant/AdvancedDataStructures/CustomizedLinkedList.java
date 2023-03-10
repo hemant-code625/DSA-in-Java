@@ -77,7 +77,7 @@ public class CustomizedLinkedList {
 
         temp.next = node.next;      // pointing such a way that the index node get ignored and removed by garbage collector
         /*
-        we can also do this (Its the same thing):- temp.next = temp.next.next;  
+        we can also do this (It's the same thing):- temp.next = temp.next.next;  
         */
         size--;
         return value;
