@@ -64,6 +64,51 @@ public class CustomizedLinkedList {
         size--;
         return value;
     }
+    public int delete(int index){
+        if(index ==0){
+            return deleteFirst();
+        }
+        if(index == size-1){
+            return deleteLast();
+        }
+        Node temp = get(index-1);   // temp node at index -1 position
+        Node node = get(index);     // node at the index which is to be removed.
+        int value = node.value;     //The nodal value that is to be returned
+
+        temp.next = node.next;      // pointing such a way that the index node get ignored and removed by garbage collector
+
+        size--;
+        return value;
+    }
+
+    public int deleteFirst(){
+        int value = head.value;    // this is the value of deleted node that we will return
+        head = head.next;
+        if(head == null){
+            tail= null;
+        }
+        size--;
+        return value;
+    }
+
+
+    public int deleteLast(){
+        int value = tail.value;
+        Node secondLast = get(size-2);
+        secondLast.next = tail;
+        tail.next = null;
+        size--;
+
+        return value;
+    }
+    public Node get(int index){
+        Node temp = head;
+        for (int i = 1; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
 
 
 //    public void delete(int index){
