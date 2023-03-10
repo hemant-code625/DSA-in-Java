@@ -18,6 +18,12 @@ public class Main {
         System.out.println(list.deleteLast());
         System.out.println(list.delete(2));
         list.display();
+        DoublyLinkedList dlist = new DoublyLinkedList();
+        dlist.insertFirst(13);
+        dlist.insertFirst(12);
+        dlist.insertFirst(100);
+        dlist.insertFirst(78);
+        dlist.display();
 
 
     }
