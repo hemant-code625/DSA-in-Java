@@ -27,7 +27,7 @@ public class CustomizedLinkedList {
         if(index==0){
             insertFirst(value);
         }
-        else if(index == size){
+        else if(index == size-1){
             insertLast(value);
         }
 
