@@ -23,6 +23,10 @@ public class Main {
         dlist.insertFirst(12);
         dlist.insertFirst(100);
         dlist.insertFirst(78);
+        dlist.insertLast(200);
+        dlist.insert(201, 2);
+        dlist.insert(10056,4);
+        dlist.delete(4);
         dlist.display();
 
 
