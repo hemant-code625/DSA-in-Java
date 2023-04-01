@@ -112,4 +112,24 @@ class Solution {
 }
 
 
+// Leetcode 203 (Error!)
+
+    public Node removeElements(int val){
+        Node Dummy = new Node(head);
+        Node curr = head;
+        Node prev = Dummy;
+        while(curr.next != null && curr.next.next != null){
+            if(curr.value == val){
+                prev.next = curr.next;
+                curr = curr.next.next;
+            }
+            curr = curr.next;
+            prev = prev.next;
+        }
+
+        return Dummy.next;
+
+
+    }
+
 
